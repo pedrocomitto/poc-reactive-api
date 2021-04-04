@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: customer
+  r2dbc:
+    url: r2dbc:pool:postgres://0.0.0.0:5432/customer-db
+    username: customer
+    password: customer
+
+
+
+
+
+

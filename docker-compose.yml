@@ -1,0 +1,13 @@
+version: "3"
+services:
+  customer-db:
+    image: postgres:9.6
+    container_name: "customer-db"
+    restart: always
+    environment:
+      - POSTGRES_DB=customer-db
+      - POSTGRES_USER=customer
+      - POSTGRES_PASSWORD=customer
+      - TZ=GMT
+    ports:
+      - 5432:5432
